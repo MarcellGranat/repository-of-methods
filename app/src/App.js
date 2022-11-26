@@ -1,19 +1,14 @@
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home/Home";
+
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <script
-          crossorigin
-          src="https://unpkg.com/react@16/umd/react.development.js"
-        ></script>
-        <script
-          crossorigin
-          src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
-        ></script>
-        <script src="{{ $app.RelPermalink }}"></script>
-        <p></p>
-      </header>
-    </div>
+    <main className="app">
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </main>
   );
 }
 
