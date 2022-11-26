@@ -2,7 +2,7 @@ import React from "react";
 import { Flex, Button } from "@chakra-ui/react";
 import CommonBoxes from "../../components/common/CommonBoxes";
 
-const Home = () => {
+const Panel = () => {
   return (
     <Flex
       wrap="wrap"
@@ -11,11 +11,10 @@ const Home = () => {
       alignItems={"center"}
       justify="center"
     >
-      <CommonBoxes title="Keresztmetszet" color="green" icon="" />
-      <CommonBoxes title="Idősor" color="yellow" icon="" />
-      <CommonBoxes title="Panel" color="red" icon="" url="/panel" />
+      <CommonBoxes title="DID" color="green" icon="" />
+      <CommonBoxes title="Fix effect" color="yellow" icon="" />
     </Flex>
   );
 };
 
-export default Home;
+export default Panel;
