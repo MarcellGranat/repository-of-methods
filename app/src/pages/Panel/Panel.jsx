@@ -4,7 +4,7 @@ import CommonBoxes from "../../components/common/CommonBoxes";
 
 const Panel = () => {
   return (
-    <Flex wrap="wrap" gap="20px" justify="center">
+    <Flex wrap="wrap" gap="40px" justify="center">
       <CommonBoxes title="DID" color="green" icon="" />
       <CommonBoxes title="Fix effect" color="yellow" icon="" />
     </Flex>
