@@ -1,6 +1,5 @@
-import { Flex, Image } from "@chakra-ui/react";
+import { Flex, Image, Link } from "@chakra-ui/react";
 import React from "react";
-import { Link } from "react-router-dom";
 
 const Layout = ({ children }) => {
   return (
