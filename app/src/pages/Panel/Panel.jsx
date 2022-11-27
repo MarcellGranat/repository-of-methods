@@ -1,3 +1,4 @@
+import { AddIcon } from "@chakra-ui/icons";
 import React from "react";
 import { Flex, Stack } from "@chakra-ui/react";
 import CommonBoxes from "../../components/common/CommonBoxes";
@@ -9,8 +10,8 @@ const Panel = () => {
       <Stack>
         <CustomBreadcrumb title="Panel" />
         <Flex wrap="wrap" gap="40px" justify="center">
-          <CommonBoxes title="DID" icon="" />
-          <CommonBoxes title="Fix effect" icon="" />
+          <CommonBoxes title="DID" icon={AddIcon} />
+          <CommonBoxes title="Fix effect" icon={AddIcon} url="/fix-effect" />
         </Flex>
       </Stack>
     </Layout>

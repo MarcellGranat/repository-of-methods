@@ -18,12 +18,12 @@ const Layout = ({ title, children }) => {
             src="/mnb.png"
             alt="MNB Intézet"
             position="absolute"
-            right="20px"
-            bottom="20px"
             maxH={"50px"}
+            top="20px"
+            left="20px"
           />
         </Link>
-        <Link href="https://www.marcellgranat.com/" isExternal>
+        {/* <Link href="https://www.marcellgranat.com/" isExternal>
           <Image
             src="/marcell-granat.png"
             alt="Marcell Granát"
@@ -32,7 +32,7 @@ const Layout = ({ title, children }) => {
             top="20px"
             left="20px"
           />
-        </Link>
+        </Link> */}
       </Flex>
     </>
   );

@@ -1,7 +1,7 @@
+import { AddIcon } from "@chakra-ui/icons";
 import { Flex } from "@chakra-ui/react";
 import React from "react";
 import CommonBoxes from "../../components/common/CommonBoxes";
-import { PhoneIcon, AddIcon, WarningIcon } from "@chakra-ui/icons";
 import Layout from "../../components/layout/Layout";
 const Home = () => {
   return (
@@ -10,10 +10,10 @@ const Home = () => {
         <CommonBoxes
           title="Keresztmetszet"
           desc="Több megfigyelés egyidejűleg"
-          icon={PhoneIcon}
+          icon={AddIcon}
         />
         <CommonBoxes title="Idősor" icon={AddIcon} />
-        <CommonBoxes title="Panel" url="/panel" icon={WarningIcon} />
+        <CommonBoxes title="Panel" url="/panel" icon={AddIcon} />
       </Flex>
     </Layout>
   );

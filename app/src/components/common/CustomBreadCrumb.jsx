@@ -16,8 +16,8 @@ export const CustomBreadcrumb = ({
         spacing="8px"
         separator={<ChevronRightIcon color="gray.500" />}
         pos="absolute"
-        top={"16px"}
-        left={"100px"}
+        top={"4px"}
+        left={"260px"}
       >
         <BreadcrumbItem>
           <BreadcrumbLink href="/">Főoldal</BreadcrumbLink>

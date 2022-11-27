@@ -1,6 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Layout from "./components/layout/Layout";
+import FixEffect from "./pages/FixEffect/FixEffect";
 import Home from "./pages/Home/Home";
 import Panel from "./pages/Panel/Panel";
 
@@ -10,6 +10,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/panel" element={<Panel />} />
+        <Route path="/fix-effect" element={<FixEffect />} />
       </Routes>
     </main>
   );
