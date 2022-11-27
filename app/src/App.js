@@ -7,12 +7,10 @@ import Panel from "./pages/Panel/Panel";
 function App() {
   return (
     <main className="app">
-      <Layout>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/panel" element={<Panel />} />
-        </Routes>
-      </Layout>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/panel" element={<Panel />} />
+      </Routes>
     </main>
   );
 }

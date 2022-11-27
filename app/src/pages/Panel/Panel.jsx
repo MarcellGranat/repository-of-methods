@@ -1,13 +1,19 @@
 import React from "react";
-import { Flex, Button } from "@chakra-ui/react";
+import { Flex, Stack } from "@chakra-ui/react";
 import CommonBoxes from "../../components/common/CommonBoxes";
-
+import { CustomBreadcrumb } from "../../components/common/CustomBreadCrumb";
+import Layout from "../../components/layout/Layout";
 const Panel = () => {
   return (
-    <Flex wrap="wrap" gap="40px" justify="center">
-      <CommonBoxes title="DID" color="green" icon="" />
-      <CommonBoxes title="Fix effect" color="yellow" icon="" />
-    </Flex>
+    <Layout title="Panel">
+      <Stack>
+        <CustomBreadcrumb title="Panel" />
+        <Flex wrap="wrap" gap="40px" justify="center">
+          <CommonBoxes title="DID" icon="" />
+          <CommonBoxes title="Fix effect" icon="" />
+        </Flex>
+      </Stack>
+    </Layout>
   );
 };
 

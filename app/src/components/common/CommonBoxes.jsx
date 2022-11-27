@@ -5,26 +5,40 @@ import { Link } from "react-router-dom";
 
 const CommonBoxes = ({ desc, title, icon, url }) => {
   let [revealed, setRevealed] = useState(false);
-
-  let onHover = () => setRevealed((prevRevealed) => !prevRevealed);
-
   return (
     <Link to={url}>
-      <motion.div whileHover={{ rotateY: 180 }} onHoverStart={onHover}>
-        <Stack
-          bg="#eaf8f8"
-          spacing="40px"
-          justify="center"
-          alignItems={"center"}
-          w={"300px"}
-          h="300px"
-          boxShadow="lg"
-          color="#46babb"
-        >
+      {/* <motion.div
+        whileHover={desc ? { rotateY: 180 } : { rotateY: 0 }}
+        onHoverStart={() => setRevealed(title)}
+        onHoverEnd={() => setRevealed("")}
+      > */}
+      <Stack
+        bg="#eaf8f8"
+        justify="space-between"
+        alignItems={"center"}
+        w={"300px"}
+        h="300px"
+        boxShadow="lg"
+        color="#46babb"
+        py={24}
+      >
+        {/* {revealed === title && desc ? (
+            <Text fontSize={"30px"} transform="scaleX(-1)" textAlign={"center"}>
+              {desc}
+            </Text>
+          ) : (
+            <> */}
+        <Stack spacing="16px" justify="center" alignItems={"center"}>
+          <Icon as={icon} alt="" boxSize="24px" />
           <Text fontSize={"30px"}>{title}</Text>
-          <Icon as={icon} alt="" />
         </Stack>
-      </motion.div>
+        <Text fontSize={"18px"} fontWeight="thin">
+          {desc}
+        </Text>
+        {/* </>
+          )} */}
+      </Stack>
+      {/* </motion.div> */}
     </Link>
   );
 };
