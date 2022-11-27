@@ -11,7 +11,7 @@ const FixEffect = () => {
         grandparentTitle={"Panel"}
         grandparentHref="/panel"
       />
-      <SimpleGrid columns={[1, 2, 3]} gap={20} maxW="1200px" px="20px">
+      <SimpleGrid columns={[1, 2, 2, 3]} gap={20} maxW="1200px" px="20px">
         <Stack spacing="20px">
           <Heading color="#093842" fontSize="2xl">
             Saját írásaink
